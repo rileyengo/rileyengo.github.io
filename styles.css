@@ -35,6 +35,7 @@ header{
 }
 
 .brand{
+  font: "Sanchez", Georgia, "Times New Roman", serif;
   font-weight: 800;
   letter-spacing: .02em;
   font-size: 22px;
@@ -57,7 +58,7 @@ nav a:hover{ text-decoration: underline; }
 
 /* ---------- Hero ---------- */
 h1{
-  font-family: "Sanchez", Georgia, "Times New Roman", serif; /* slab headline */
+  font-family: "Rubik", Helvetica, Arial, sans-serif; /* slab headline */
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -.01em;

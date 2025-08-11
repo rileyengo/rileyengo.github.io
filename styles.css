@@ -82,7 +82,7 @@ h1{
 }
 
 .subtitle{
-  font-size: 24px;
+  font-size: 20px;
   color: var(--ink-2);
   max-width: 100ch;
   font-style: italic;

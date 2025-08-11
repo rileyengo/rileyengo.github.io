@@ -46,6 +46,10 @@ header{
 
 .brand a:hover{ text-decoration: none; color: var(--link-hover); }
 
+a:visited{
+  color: var(--link);           /* prevents purple */
+}
+
 /* ---------- Nav ---------- */
 nav{
   display: flex;

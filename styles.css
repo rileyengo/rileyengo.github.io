@@ -35,10 +35,10 @@ header{
 }
 
 .brand{
-  font: "Sanchez", Georgia, "Times New Roman", serif;
+  font-family: "Sanchez", Georgia, "Times New Roman", serif;
   font-weight: 800;
   letter-spacing: .02em;
-  font-size: 22px;
+  font-size: 40px;
 }
 
 /* ---------- Nav ---------- */

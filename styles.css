@@ -41,6 +41,7 @@ header{
   letter-spacing: .02em;
   font-size: 40px;
   color: var(--link);
+  text-decoration: none;
 }
 
 .brand a:hover{ text-decoration: none; color: var(--link-hover); }

@@ -1,11 +1,89 @@
-:root { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; }
-* { box-sizing: border-box; }
-body { margin: 0; background: #0b0b0c; color: #e9eaee; }
-main { max-width: 760px; margin: 48px auto; padding: 0 20px; }
-header h1 { margin: 0 0 6px; font-size: 2rem; }
-header p { margin: 0 0 16px; color: #9aa0a6; }
-nav { display: flex; gap: 16px; margin: 12px 0 28px; }
-nav a { color: #bcd; text-decoration: none; border-bottom: 1px dotted #567; }
-nav a:hover { color: #fff; border-bottom-color: #aaa; }
-section { background: #101114; padding: 20px; border: 1px solid #1b1d22; border-radius: 12px; }
-footer { margin: 28px 0 0; color: #8a8f98; }
+/* ---------- Base / tokens ---------- */
+:root{
+  --bg: #f3f4f6;          /* light gray background */
+  --ink: #111217;         /* primary text */
+  --ink-2: #3b3f46;       /* secondary text */
+  --link: #0f172a;        /* link/nav color */
+  --maxw: 1100px;         /* content width */
+  --space: 28px;          /* base spacing unit */
+}
+
+*{ box-sizing: border-box; }
+html, body { height: 100%; }
+body{
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Rubik", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* ---------- Layout ---------- */
+main{
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: calc(var(--space)*2) var(--space);
+}
+
+/* ---------- Header / brand ---------- */
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space);
+  margin-bottom: calc(var(--space)*2);
+}
+
+.brand{
+  font-weight: 800;
+  letter-spacing: .02em;
+  font-size: 22px;
+}
+
+/* ---------- Nav ---------- */
+nav{
+  display: flex;
+  gap: 22px;
+}
+nav a{
+  text-decoration: none;
+  color: var(--link);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: 14px;
+}
+nav a:hover{ text-decoration: underline; }
+
+/* ---------- Hero ---------- */
+h1{
+  font-family: "Sanchez", Georgia, "Times New Roman", serif; /* slab headline */
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -.01em;
+  font-size: clamp(36px, 6vw, 72px); /* responsive big */
+  margin: calc(var(--space)*2) 0 var(--space);
+}
+.lead{
+  font-size: 18px;
+  color: var(--ink-2);
+  max-width: 70ch;
+}
+
+/* small bracketed link like [ABOUT] */
+.inline-link{
+  display: inline-block;
+  margin-top: var(--space);
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--link);
+  text-decoration: underline;
+}
+
+/* Footer */
+footer{
+  color: var(--ink-2);
+  margin-top: calc(var(--space)*2.5);
+  font-size: 14px;
+}

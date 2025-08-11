@@ -48,6 +48,7 @@ header{
 
 a:visited{
   color: var(--link);           /* prevents purple */
+  text-decoration: none;
 }
 
 /* ---------- Nav ---------- */

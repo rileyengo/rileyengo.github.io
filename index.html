@@ -1,30 +1,34 @@
-<!doctype html>
-<html lang="en">
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Riley Ngo</title>
-  <link rel="stylesheet" href="./styles.css" />
+<body>
   <main>
     <header>
-      <h1>Riley Ngo</h1>
-      <p>health systems × design × music</p>
+      <div class="brand">RILEY NGO</div>
+      <nav>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </header>
 
-    <nav>
-      <a href="./">Home</a>
-      <a href="./projects.html">Projects</a>
-      <a href="./contact.html">Contact</a>
-    </nav>
+    <h1>Hi! I'm Riley. <small>(he/him)</small></h1>
 
-    <section>
-      <h1>Hi! I'm Riley. (he/him)</h1>
-      <p>I'm a systems thinker and creative strategist exploring how health, technology, and storytelling can be reimagined to better serve people.</p>
-      <p>I build for systems we haven’t fully imagined yet, and apply design, research, and narratives to confront structural barriers—whether through global policy, health technology, or music education.</p> 
-    </section>
+    <p class="lead">
+      I'm a <strong>systems thinker</strong> and creative strategist exploring how health, technology,
+      and storytelling can be reimagined to better serve people.
+    </p>
+
+    <p class="lead">
+      I build for systems we <strong>haven’t fully imagined</strong> yet, and apply design, research,
+      and narratives to confront structural barriers—whether through global policy, health technology,
+      or music education.
+    </p>
+
+    <a class="inline-link" href="about.html">[About]</a>
 
     <footer>
-      <small>© <span id="y"></span> Riley Ngo</small>
+      Currently located in: Calgary, Canada · Designed with love (not codependency) and coffee.
+      <br>© <span id="y"></span> Riley Ngo
     </footer>
   </main>
   <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
-</html>
+</body>

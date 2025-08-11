@@ -80,6 +80,13 @@ h1{
   max-width: 100ch;
 }
 
+.subtitle{
+  font-size: 24px;
+  color: var(--ink-2);
+  max-width: 100ch;
+  font-style: italic;
+}
+
 h2{
   font-family: "Rubik", Helvetica, Arial, sans-serif; /* slab headline */
   font-weight: 700;

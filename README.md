@@ -1,3 +1,2 @@
-# americhino.github.io
-Test branch
-Named after Akane Tendo from Ranma 1/2
+# Riley Ngo's personal website
+The personal website of Riley Ngo

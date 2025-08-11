@@ -1,10 +1,11 @@
 /* ---------- Base / tokens ---------- */
 :root{
-  --bg: #f3f4f6;          /* light gray background */
+  --bg: #F2F7FF;          /* light gray background */
   --ink: #111217;         /* primary text */
   --ink-2: #3b3f46;       /* secondary text */
   --link: #0f172a;        /* link/nav color */
-  --maxw: 1100px;         /* content width */
+  --link-hover: #00478A;  /* link hover colour */
+  --maxw: 1fr;         /* content width */
   --space: 28px;          /* base spacing unit */
 }
 
@@ -54,7 +55,7 @@ nav a{
   letter-spacing: .08em;
   font-size: 22px;
 }
-nav a:hover{ text-decoration: underline; }
+nav a:hover{ text-decoration: none; color: var(--link-hover); }
 
 /* ---------- Hero ---------- */
 h1{

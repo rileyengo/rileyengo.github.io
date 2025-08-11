@@ -72,6 +72,10 @@ h1{
   max-width: 70ch;
 }
 
+.scroll-body {
+  width: calc(var(--maxw)*0.8);
+}
+
 /* small bracketed link like [ABOUT] */
 .inline-link{
   display: inline-block;

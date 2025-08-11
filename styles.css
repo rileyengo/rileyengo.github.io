@@ -43,8 +43,20 @@ header{
   color: var(--link);
   text-decoration: none !important;
 }
+.brand a {
+  color: var(--link);
+  text-decoration: none; /* remove underline */
+}
 
-.brand a:hover{ text-decoration: none; color: var(--link-hover); }
+.brand a:hover {
+  color: var(--link-hover);
+  text-decoration: none;
+}
+
+.brand a:visited {
+  color: var(--link);
+  text-decoration: none;
+}
 
 a:visited{
   color: var(--link);           /* prevents purple */

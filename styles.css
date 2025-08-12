@@ -120,6 +120,13 @@ h2{
   text-decoration: underline;
 }
 
+.home-project-grid {
+  display: grid;
+}
+
+.home-project-card {
+}
+
 /* Footer */
 footer{
   color: var(--ink-2);

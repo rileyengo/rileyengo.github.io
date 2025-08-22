@@ -27,12 +27,48 @@ main{
 }
 
 /* ---------- Header / brand ---------- */
-header{
+/* Default desktop layout */
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: var(--space);
   margin-bottom: calc(var(--space)*2);
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+}
+
+.menu-toggle {
+  display: none; /* hidden on desktop */
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--link);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  nav {
+    display: none;               /* hide links by default */
+    flex-direction: column;
+    gap: 12px;
+    background: white;
+    position: absolute;
+    top: 60px;                   /* just below header */
+    right: 20px;
+    padding: 16px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  }
+  nav.open {
+    display: flex;               /* show when toggled */
+  }
+  .menu-toggle {
+    display: block;              /* show hamburger */
+  }
 }
 
 .brand{
@@ -64,10 +100,6 @@ a:visited{
 }
 
 /* ---------- Nav ---------- */
-nav{
-  display: flex;
-  gap: 22px;
-}
 nav a{
   text-decoration: none;
   color: var(--link);

@@ -97,49 +97,6 @@ body{
   line-height: 1.6;
 }
 
-/* HEADER */
-.site-header{
-  position: sticky; top: 0; z-index: 1000;
-  background: var(--page, #f3f7fb);
-  border-bottom: 1px solid rgba(0,0,0,.06);
-  backdrop-filter: saturate(120%) blur(6px);
-}
-.header-inner{
-  max-width: 960px; margin: 0 auto;
-  padding: 10px 16px;
-  display: grid;
-  grid-template-columns: 1fr auto;   /* brand | menu */
-  align-items: center;               /* vertical centering */
-  gap: 12px;
-}
-
-.brand{
-  font-family: "Sanchez", Georgia, "Times New Roman", serif;
-  font-weight: 800;
-  letter-spacing: 0.01em;            /* tighter for Sanchez */
-  font-size: clamp(22px, 5.4vw, 36px);
-  line-height: 1;                    /* prevents tall header */
-  white-space: nowrap;               /* keep on one line */
-  color: var(--ink, #0b0f14);
-  text-decoration: none;
-}
-
-.menu-toggle{
-  appearance: none; border: 1px solid rgba(0,0,0,.1);
-  background: #fff; color: inherit;
-  width: 36px; height: 36px; border-radius: 8px;
-  font-size: 20px; line-height: 36px; text-align: center;
-  cursor: pointer;
-}
-
-/* Mobile tweaks */
-@media (max-width: 768px){
-  .header-inner{ padding: 10px 14px; }
-  .brand{ font-size: clamp(20px, 6vw, 28px); letter-spacing: 0; }
-}
-
-/* Ensure hero doesn't collide with sticky header */
-.hero{ margin-top: 8px; }
 /* ---------- Layout ---------- */
 main{
   max-width: var(--maxw);

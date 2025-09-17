@@ -29,7 +29,6 @@ main{
   margin: 0 auto;
   padding: 24px;
 }
-p{ hyphens: auto; overflow-wrap: anywhere; }
 .hero-intro{ max-width: 66ch; }
 
 

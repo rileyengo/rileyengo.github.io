@@ -160,6 +160,7 @@ nav {
   font-size: 40px;
   color: var(--link);
   text-decoration: none !important;
+  white-space: nowrap;   /* <--- prevents wrapping */
 }
 .brand a {
   color: var(--link);

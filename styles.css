@@ -5,7 +5,7 @@
   --ink-2: #3b3f46;       /* secondary text */
   --link: #0f172a;        /* link/nav color */
   --link-hover: #00478A;  /* link hover colour */
-  --maxw: 90%;         /* content width */
+  --maxw: 90%;            /* content width */
   --space: 28px;          /* base spacing unit */
 }
 
@@ -52,6 +52,9 @@ nav {
 
 /* Mobile */
 @media (max-width: 768px) {
+  main {
+    max-width: 90%;
+  }
   nav {
     display: none;               /* hide links by default */
     flex-direction: column;
